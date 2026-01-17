@@ -31,8 +31,8 @@ gcloud projects describe PROJECT_ID
 gcloud beta billing projects describe PROJECT_ID
 # Disable billing (nuclear option)
 gcloud beta billing projects unlink PROJECT_ID
-
 ```
+
 ## Service Accounts (Very Important)
 ```sh
 # List service accounts
@@ -62,7 +62,6 @@ gcloud config set auth/impersonate_service_account \
 
 # Disable later:
 gcloud config unset auth/impersonate_service_account
-
 ```
 
 ## Artifact Registry (Docker Images)
@@ -173,7 +172,6 @@ gcloud projects get-iam-policy PROJECT_ID
 gcloud services list
 # Disable unused:
 gcloud services disable vision.googleapis.com
-
 ```
 
 ## Cleanup Checklist (SAVE THIS)
