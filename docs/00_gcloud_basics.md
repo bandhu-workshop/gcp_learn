@@ -60,6 +60,10 @@ gcloud iam service-accounts add-iam-policy-binding \
 gcloud config set auth/impersonate_service_account \
   cloudrun-deployer@PROJECT_ID.iam.gserviceaccount.com
 
+# Best practice (what you’re doing correctly)
+# Human → impersonates → Service Account
+gcloud config set auth/impersonate_service_account SA_EMAIL
+
 # Disable later:
 gcloud config unset auth/impersonate_service_account
 ```
